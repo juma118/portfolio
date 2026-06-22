@@ -119,7 +119,7 @@ export default function RotatingHeadline({
     <div>
       {/* Rotating role / title */}
       <div
-        className="relative min-h-[2.75rem] md:min-h-[3.75rem]"
+        className="relative min-h-[3.25rem] md:min-h-[4.5rem]"
         style={{ perspective: 900 }}
       >
         <AnimatePresence mode="wait">
@@ -129,7 +129,7 @@ export default function RotatingHeadline({
             animate={fx.role.animate}
             exit={fx.role.exit}
             transition={fx.role.transition}
-            className="origin-bottom text-3xl font-bold heading-gradient md:text-5xl"
+            className="origin-bottom pb-2 text-3xl font-bold leading-[1.2] heading-gradient md:text-5xl md:leading-[1.2]"
           >
             {current.role}
           </MotionH2>
