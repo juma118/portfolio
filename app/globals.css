@@ -76,3 +76,35 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #3a3a4a;
 }
+
+/* Project screenshots rest in 3D "on a desk" — a persistent perspective pose
+   that pivots on its base and lifts gently on hover (desktop only). */
+.tilt {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+@media (min-width: 768px) {
+  .tilt-left {
+    transform: perspective(1400px) rotateX(13deg) rotateY(-17deg);
+    transform-origin: 50% 100%;
+  }
+  .tilt-right {
+    transform: perspective(1400px) rotateX(13deg) rotateY(17deg);
+    transform-origin: 50% 100%;
+  }
+  .group:hover .tilt-left {
+    transform: perspective(1400px) rotateX(6deg) rotateY(-9deg) translateY(-8px);
+  }
+  .group:hover .tilt-right {
+    transform: perspective(1400px) rotateX(6deg) rotateY(9deg) translateY(-8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tilt,
+  .group:hover .tilt-left,
+  .group:hover .tilt-right {
+    transition: none;
+    transform: none;
+  }
+}

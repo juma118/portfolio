@@ -195,6 +195,8 @@ const es: Dictionary = {
   projects: {
     eyebrow: "04 / Trabajo",
     title: "Proyectos Destacados",
+    viewCode: "Ver Código",
+    liveDemo: "Demo en Vivo",
     items: [
       {
         title: "Plataforma de Valuación de Propiedades con IA",

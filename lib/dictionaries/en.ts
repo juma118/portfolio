@@ -195,6 +195,8 @@ const en = {
   projects: {
     eyebrow: "04 / Work",
     title: "Featured Projects",
+    viewCode: "View Code",
+    liveDemo: "Live Demo",
     items: [
       {
         title: "AI Property Valuation Platform",
