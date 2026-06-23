@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { Dictionary } from "@/lib/dictionaries";
 import { SectionHeading } from "./Section";
+import { getSkillIcon } from "@/lib/skillIcons";
 import {
   FiServer,
   FiLayout,
@@ -51,11 +52,19 @@ export default function Skills({ dict }: { dict: Dictionary }) {
                   <h3 className="font-semibold text-white">{cat.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {cat.skills.map((skill) => (
-                    <span key={skill} className="chip">
-                      {skill}
-                    </span>
-                  ))}
+                  {cat.skills.map((skill) => {
+                    const { Icon, color } = getSkillIcon(skill);
+                    return (
+                      <span key={skill} className="chip gap-1.5">
+                        <Icon
+                          size={13}
+                          style={color ? { color } : undefined}
+                          className="shrink-0"
+                        />
+                        {skill}
+                      </span>
+                    );
+                  })}
                 </div>
               </motion.div>
             );
