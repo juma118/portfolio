@@ -1,0 +1,29 @@
+
+> portfolio@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://198.18.1.38:3000
+✓ Ready in 1365ms
+⚠ Slow filesystem detected. The benchmark took 280ms. If E:\portfolio\.next/dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+
+ GET /en/ 200 in 822ms (next.js: 498ms, generate-params: 298ms, application-code: 324ms)
+ GET /en/ 200 in 202ms (next.js: 55ms, generate-params: 4ms, application-code: 147ms)
+ GET / 200 in 61ms (next.js: 32ms, application-code: 28ms)
+ GET /en/ 200 in 25ms (next.js: 8ms, generate-params: 4ms, application-code: 17ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
+✓ Compiled in 298ms
+ GET /en/ 200 in 56ms (next.js: 31ms, generate-params: 4ms, application-code: 25ms)
+ GET /en/ 200 in 150ms (next.js: 6ms, generate-params: 3ms, application-code: 144ms)
+✓ Compiled in 249ms
+✓ Compiled in 62ms
+ GET /en/ 200 in 85ms (next.js: 46ms, generate-params: 4ms, application-code: 38ms)
+ GET /en/ 200 in 152ms (next.js: 6ms, generate-params: 3ms, application-code: 145ms)
+ GET /en/ 200 in 69ms (next.js: 9ms, generate-params: 5ms, application-code: 60ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
+ GET /en/ 200 in 66ms (next.js: 7ms, generate-params: 4ms, application-code: 58ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
