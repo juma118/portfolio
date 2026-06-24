@@ -77,6 +77,58 @@
   background: #3a3a4a;
 }
 
+/* Custom Claude-spark cursor */
+.cursor-none,
+.cursor-none * {
+  cursor: none !important;
+}
+.claude-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  will-change: transform;
+}
+.claude-cursor.is-on {
+  opacity: 1;
+}
+.claude-cursor.is-hidden {
+  opacity: 0;
+}
+.claude-cursor__scale {
+  transform: scale(1);
+  transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.claude-cursor.is-hover .claude-cursor__scale {
+  transform: scale(1.7);
+}
+.claude-cursor.is-down .claude-cursor__scale {
+  transform: scale(0.7);
+}
+.claude-cursor__spark {
+  display: block;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+  animation: claude-pulse 1.5s ease-in-out infinite;
+}
+/* "grasp and relax" — gently contracts then expands */
+@keyframes claude-pulse {
+  0%,
+  100% {
+    transform: scale(0.82);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .claude-cursor__spark {
+    animation: none;
+  }
+}
+
 /* Project screenshots rest in 3D "on a desk" — a persistent perspective pose
    that pivots on its base and lifts gently on hover (desktop only). */
 .tilt {

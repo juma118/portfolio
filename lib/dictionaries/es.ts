@@ -232,6 +232,17 @@ const es: Dictionary = {
         images: [] as string[],
       },
       {
+        title: "JaliCommerce AI",
+        description:
+          "Plataforma de e-commerce full-stack y de nivel producción hecha con Next.js 15 (App Router) y NextAuth v5 — datos en Supabase + PostgreSQL, pagos con Stripe, búsqueda con Algolia InstantSearch y recomendaciones de productos impulsadas por IA.",
+        tags: ["Next.js", "NextAuth", "Supabase", "Stripe", "Algolia"],
+        github: "https://github.com/juma118/jali-commerce",
+        demo: "",
+        image: "/projects/jali.png",
+        mobile: false,
+        images: [] as string[],
+      },
+      {
         title: "NutriSnap — Coach de Nutrición con IA",
         description:
           "App móvil multiplataforma (React Native + Expo) que registra comidas desde una foto usando Claude vision, devuelve un análisis estructurado de macros y actúa como coach de comidas personalizado con IA.",

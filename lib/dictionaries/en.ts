@@ -232,6 +232,17 @@ const en = {
         images: [] as string[],
       },
       {
+        title: "JaliCommerce AI",
+        description:
+          "Full-stack, production-style e-commerce platform built with Next.js 15 (App Router) and NextAuth v5 — Supabase + PostgreSQL data, Stripe checkout, Algolia InstantSearch, and AI-powered product recommendations.",
+        tags: ["Next.js", "NextAuth", "Supabase", "Stripe", "Algolia"],
+        github: "https://github.com/juma118/jali-commerce",
+        demo: "",
+        image: "/projects/jali.png",
+        mobile: false,
+        images: [] as string[],
+      },
+      {
         title: "NutriSnap — AI Nutrition Coach",
         description:
           "Cross-platform mobile app (React Native + Expo) that logs meals from a photo using Claude vision, returns structured macro analysis, and acts as a personalized AI meal coach.",

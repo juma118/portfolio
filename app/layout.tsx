@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/config";
 import NeuralNetwork from "@/components/NeuralNetwork";
+import Cursor from "@/components/Cursor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className="font-sans">
         <NeuralNetwork />
         {children}
+        <Cursor />
       </body>
     </html>
   );

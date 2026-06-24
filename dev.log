@@ -27,3 +27,25 @@ See more: https://nextjs.org/docs/app/guides/local-development
 [browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
  GET /en/ 200 in 66ms (next.js: 7ms, generate-params: 4ms, application-code: 58ms)
 [browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
+✓ Compiled in 58ms
+✓ Compiled in 23ms
+ GET / 200 in 74ms (next.js: 32ms, application-code: 42ms)
+ GET /en/ 200 in 53ms (next.js: 34ms, generate-params: 5ms, application-code: 20ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (components/SpaceBackground.tsx:109:19)
+✓ Compiled in 27ms
+✓ Compiled in 149ms
+✓ Compiled in 90ms
+ GET /en/ 200 in 97ms (next.js: 34ms, generate-params: 4ms, application-code: 63ms)
+ GET /en/ 200 in 44ms (next.js: 3ms, generate-params: 15µs, application-code: 42ms)
+ GET /en/ 200 in 17ms (next.js: 2ms, generate-params: 13µs, application-code: 14ms)
+✓ Compiled in 274ms
+ GET /en/ 200 in 431ms (next.js: 45ms, generate-params: 4ms, application-code: 387ms)
+ GET /en/ 200 in 644ms (next.js: 145ms, generate-params: 19µs, application-code: 500ms)
+ GET /en/ 200 in 20ms (next.js: 6ms, generate-params: 16µs, application-code: 15ms)
+ GET /en/ 200 in 161ms (next.js: 26ms, generate-params: 3ms, application-code: 135ms)
+ GET /en/ 200 in 53ms (next.js: 37ms, generate-params: 18µs, application-code: 17ms)
+ GET /en/ 200 in 54ms (next.js: 22ms, generate-params: 15µs, application-code: 32ms)
+ GET /en/ 200 in 130ms (next.js: 3ms, generate-params: 14µs, application-code: 126ms)
+[?25h
