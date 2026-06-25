@@ -177,7 +177,7 @@ const en = {
       {
         role: "Full-Stack Software Engineer (Intern)",
         org: "BioHealth MX · Chihuahua",
-        period: "Feb 2022 — Mar 2023",
+        period: "Feb 2021 — Mar 2023",
         description:
           "Supported AI-enabled course modules with Python, Node.js, React, and TypeScript. Built AI prototypes for content automation with OpenAI, LangChain, and RAG, and assisted with Docker deployments and SQL optimization.",
       },

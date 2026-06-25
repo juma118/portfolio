@@ -177,7 +177,7 @@ const es: Dictionary = {
       {
         role: "Ingeniero de Software Full-Stack (Prácticas)",
         org: "BioHealth MX · Chihuahua",
-        period: "Feb 2022 — Mar 2023",
+        period: "Feb 2021 — Mar 2023",
         description:
           "Apoyé módulos de cursos habilitados con IA usando Python, Node.js, React y TypeScript. Construí prototipos de IA para automatización de contenido con OpenAI, LangChain y RAG, y colaboré en despliegues con Docker y optimización de SQL.",
       },
