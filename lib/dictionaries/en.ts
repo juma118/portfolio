@@ -14,9 +14,7 @@ const en = {
   },
   hero: {
     greeting: "Hi, my name is",
-    // role is used for the page <title> / SEO metadata.
     role: "AI & Full-Stack Software Engineer",
-    // rotating headline + summary pairs cycled in the hero with animation.
     rotating: [
       {
         role: "AI & Full-Stack Software Engineer",

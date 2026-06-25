@@ -8,9 +8,7 @@ import {
   type Transition,
 } from "framer-motion";
 
-// Alias the animated elements to plain components. framer-motion's full prop
-// types, combined with our varied transition shapes, otherwise overflow
-// TypeScript's union-complexity limit on these JSX elements.
+// Aliased to avoid framer-motion's prop types overflowing TS union complexity.
 const MotionH2 = motion.h2 as React.FC<any>;
 const MotionP = motion.p as React.FC<any>;
 
@@ -25,10 +23,8 @@ type Anim = {
 
 type Effect = { name: string; role: Anim; tagline: Anim };
 
-// A distinct switch animation for each headline pair. The list is indexed by
-// pair position (modulo length), so each title/summary swaps in differently.
 const EFFECTS: Effect[] = [
-  // 0 — blur rise
+  // blur rise
   {
     name: "blur-rise",
     role: {
@@ -44,7 +40,7 @@ const EFFECTS: Effect[] = [
       transition: { duration: 0.45, ease: "easeOut", delay: 0.08 },
     },
   },
-  // 1 — horizontal slide (spring)
+  // horizontal slide
   {
     name: "slide-x",
     role: {
@@ -60,7 +56,7 @@ const EFFECTS: Effect[] = [
       transition: { type: "spring", stiffness: 230, damping: 26, delay: 0.06 },
     },
   },
-  // 2 — zoom / pop
+  // zoom
   {
     name: "zoom",
     role: {
@@ -76,7 +72,7 @@ const EFFECTS: Effect[] = [
       transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.08 },
     },
   },
-  // 3 — 3D flip
+  // 3D flip
   {
     name: "flip",
     role: {

@@ -57,11 +57,8 @@ import {
 
 type SkillIcon = { Icon: IconType; color?: string };
 
-// Generic colors for non-branded concepts.
-const CONCEPT = "#a5b4fc"; // indigo-300
+const CONCEPT = "#a5b4fc";
 
-// Keyed by a normalized skill name (see `normalize`). Brand colors are tuned to
-// stay readable on the dark cards (dark-on-dark logos get a lightened tone).
 const MAP: Record<string, SkillIcon> = {
   // AI & Automation
   openaiapi: { Icon: SiOpenai, color: "#10A37F" },
@@ -140,7 +137,6 @@ const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9#+]/g, "");
 export function getSkillIcon(name: string): SkillIcon {
   const hit = MAP[normalize(name)];
   if (hit) return hit;
-  // Language entries ("Spanish — Native" / "Español — Nativo") use an em dash.
   if (name.includes("—")) return { Icon: FiGlobe, color: CONCEPT };
   return { Icon: FiCode, color: CONCEPT };
 }

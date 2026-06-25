@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { locales, defaultLocale, type Locale } from "@/lib/config";
 
 function detectLocale(): Locale {
-  // Honor a previously chosen locale (set by the language switcher).
   const cookie = document.cookie
     .split("; ")
     .find((c) => c.startsWith("NEXT_LOCALE="))
@@ -13,7 +12,6 @@ function detectLocale(): Locale {
   if (cookie && (locales as readonly string[]).includes(cookie)) {
     return cookie as Locale;
   }
-  // Fall back to the browser language.
   const lang = navigator.language.slice(0, 2).toLowerCase();
   return (locales as readonly string[]).includes(lang)
     ? (lang as Locale)

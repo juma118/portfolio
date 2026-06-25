@@ -1,18 +1,9 @@
-// ===========================================================================
-// Non-translatable site config (name, contact, links). Edit your details here.
-// Translatable text lives in lib/dictionaries/{en,es}.ts
-// ===========================================================================
-
 export const locales = ["en", "es"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
-// Base path the site is served under (e.g. "/portfolio" on GitHub Pages).
-// Injected from next.config.mjs; empty in local dev.
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-// Prefix a public/ asset (e.g. the resume PDF) with the base path. Raw <a>/href
-// values aren't auto-prefixed by Next the way next/link and next/image are.
 export const asset = (path: string) => `${basePath}${path}`;
 
 export const localeNames: Record<Locale, string> = {

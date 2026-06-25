@@ -3,11 +3,6 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
-/**
- * A 3D starfield "flying through space" backdrop rendered with three.js.
- * Themed star colors, depth via size attenuation, additive glow, and subtle
- * pointer parallax. Pauses when the tab is hidden and respects reduced motion.
- */
 export default function SpaceBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -45,7 +40,6 @@ export default function SpaceBackground() {
     };
     setSize();
 
-    // --- Build the star field -------------------------------------------------
     const COUNT = 1600;
     const SPREAD = 1200; // x/y half-extent
     const DEPTH = 2200; // z range in front of the camera
@@ -96,7 +90,6 @@ export default function SpaceBackground() {
     const stars = new THREE.Points(geometry, material);
     scene.add(stars);
 
-    // --- Pointer parallax -----------------------------------------------------
     const target = { x: 0, y: 0 };
     const eased = { x: 0, y: 0 };
     const onMove = (e: PointerEvent) => {
@@ -105,7 +98,6 @@ export default function SpaceBackground() {
     };
     window.addEventListener("pointermove", onMove);
 
-    // --- Animation loop -------------------------------------------------------
     const clock = new THREE.Clock();
     const speed = reduceMotion ? 0 : 38; // forward units / second
     let raf = 0;
@@ -139,7 +131,6 @@ export default function SpaceBackground() {
     };
     raf = requestAnimationFrame(tick);
 
-    // --- Lifecycle ------------------------------------------------------------
     const ro = new ResizeObserver(setSize);
     ro.observe(parent);
 

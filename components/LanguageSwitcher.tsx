@@ -13,7 +13,6 @@ export default function LanguageSwitcher({ locale }: { locale: Locale }) {
   function switchTo(next: Locale) {
     setOpen(false);
     if (next === locale) return;
-    // Persist choice so the middleware keeps it on future visits.
     document.cookie = `NEXT_LOCALE=${next}; path=/; max-age=31536000; samesite=lax`;
     const segments = pathname.split("/");
     segments[1] = next; // replace the leading locale segment

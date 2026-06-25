@@ -2,11 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/**
- * Custom animated cursor shaped like the Claude "spark". Smoothly trails the
- * pointer, spins continuously, grows over interactive elements, and pops on
- * click. Desktop (fine pointer) only; hides the native cursor while active.
- */
 export default function Cursor() {
   const ref = useRef<HTMLDivElement>(null);
   const [enabled, setEnabled] = useState(false);
