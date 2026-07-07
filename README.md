@@ -35,14 +35,3 @@ on GitHub Pages.
 
 To add a language: add its code to `locales` in `lib/config.ts`, create
 `lib/dictionaries/<code>.ts`, and register it in `lib/dictionaries/index.ts`.
-
-## Deployment (GitHub Pages)
-
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the static export and
-publishes it to GitHub Pages.
-
-**One-time setup:** in the repo, go to **Settings → Pages → Build and deployment → Source** and
-select **"GitHub Actions"**.
-
-> Served from a project sub-path (`/portfolio`). If you rename the repo to
-> `juma118.github.io`, drop `basePath` in `next.config.mjs` to serve from the root URL.
