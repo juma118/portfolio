@@ -199,6 +199,17 @@ const es: Dictionary = {
     liveDemo: "Demo en Vivo",
     items: [
       {
+        title: "MediTrack — Plataforma de Historias Clínicas",
+        description:
+          "Plataforma de historias clínicas y pacientes basada en eventos. API en .NET 9 con Clean Architecture, PostgreSQL, Redis y workers de Kafka (resúmenes con IA, notificaciones, auditoría inmutable), actualizaciones en tiempo real con SignalR y JWT/RBAC — con un frontend en Next.js 16 + MUI que abarca una app clínica para el personal y un portal de autoservicio para pacientes.",
+        tags: [".NET 9", "Next.js", "PostgreSQL", "Kafka", "SignalR"],
+        github: "https://github.com/juma118/medi-track",
+        demo: "",
+        image: "/projects/medi-track/landing.png",
+        mobile: false,
+        images: [] as string[],
+      },
+      {
         title: "Plataforma de Valuación de Propiedades con IA",
         description:
           "Plataforma proptech full-stack (Next.js 14, FastAPI) que convierte listados inmobiliarios en bruto en valuaciones impulsadas por IA e inteligencia de inversión, con un chat RAG semántico sobre pgvector y un pipeline asíncrono de enriquecimiento con Celery + Redis.",

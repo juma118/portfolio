@@ -197,6 +197,17 @@ const en = {
     liveDemo: "Live Demo",
     items: [
       {
+        title: "MediTrack — Health Records Platform",
+        description:
+          "Event-driven patient & health-records platform. A .NET 9 Clean Architecture API with PostgreSQL, Redis, and Kafka workers (AI summaries, notifications, immutable audit) plus real-time SignalR updates and JWT/RBAC — with a Next.js 16 + MUI frontend spanning a staff clinic app and a patient self-service portal.",
+        tags: [".NET 9", "Next.js", "PostgreSQL", "Kafka", "SignalR"],
+        github: "https://github.com/juma118/medi-track",
+        demo: "",
+        image: "/projects/medi-track/landing.png",
+        mobile: false,
+        images: [] as string[],
+      },
+      {
         title: "AI Property Valuation Platform",
         description:
           "Full-stack proptech platform (Next.js 14, FastAPI) that turns raw real-estate listings into AI-driven valuations and investment intelligence, with a semantic RAG chat over pgvector and an async Celery + Redis enrichment pipeline.",
