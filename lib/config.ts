@@ -21,7 +21,7 @@ export const socials = [
   { name: "GitHub", url: "https://github.com/juma118", icon: "github" },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/felipe-david-rivera-luzuriaga-73415340b",
+    url: "https://linkedin.com/in/feiper19",
     icon: "linkedin",
   },
   { name: "Email", url: "mailto:felipedeveloper12@gmail.com", icon: "mail" },
