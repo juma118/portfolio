@@ -3,7 +3,7 @@
 A bilingual (English / Spanish) developer portfolio built with **Next.js 16**, **Tailwind
 CSS**, **Framer Motion**, and **three.js** (animated starfield + neural-network background).
 
-🔗 **Live:** https://juma118.github.io/portfolio/
+🔗 **Live:** https://feliper.tech
 
 ## Tech stack
 
